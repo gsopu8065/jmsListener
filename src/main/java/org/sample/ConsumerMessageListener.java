@@ -15,7 +15,7 @@ public class ConsumerMessageListener implements MessageListener {
     public void onMessage(Message message) {
         TextMessage textMessage = (TextMessage) message;
         try {
-            System.out.println(consumerName + " received "
+            System.out.println(consumerName + " srujan received "
                     + textMessage.getText());
         } catch (JMSException e) {
             e.printStackTrace();
